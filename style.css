@@ -55,3 +55,118 @@ table {
           box-sizing: border-box;
 }
 
+a {
+	text-decoration: none;
+	color: black;
+}
+
+* {
+	background-repeat: no-repeat;
+}
+
+/* header */
+
+.main-header {
+	display: grid;
+	grid-template-columns: 1fr;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	background: white;
+}
+
+.nav-row {
+	display: grid;
+	grid-template-columns: 110px 1fr 40px;
+	height: 45px;
+}
+
+.logo {
+	background-color: red;
+}
+nav {
+	display: grid;
+	grid-auto-flow: column;
+	justify-content: left;
+	margin-left: 10px;
+}
+
+.nav-item {
+	display: grid;
+	align-items: center;
+	padding: 0 10px;
+	
+}
+
+.nav-item a {
+	text-transform: uppercase;
+	color: #666;
+	font-size: 12px;
+}
+
+.nav-item a:hover {
+	color: black;
+}
+
+.search {
+	color: #999;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+}
+
+.banner {
+	height: 25px;
+	background: rgb(255, 230, 0);
+	display: grid;
+	align-items: center;
+	font-size: 11px;
+	padding-left: 130px;
+}
+
+/* featured */
+
+.featured {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-gap: 8px;
+	margin: 72px 10px 60px 10px;
+	height: 520px;
+}
+
+.feature {
+	background-size: cover;
+	background-position: center;
+	color: white;
+	display: grid;
+	grid-template-columns: 1fr;
+	padding: 10px 20px;
+	align-content: flex-end;
+}
+
+.topic {
+	text-transform: uppercase;
+
+}
+
+.feature-title {
+	font-size: 30px;
+	margin: 10px 0 20px 0;
+}
+
+.feature1 {
+	grid-row: 1 / span 2;
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.8)), url(images/strybing\ plants\ -\ 02.jpg);
+}
+
+.feature1 .feature-title {
+	font-size: 60px;
+}
+
+.feature2 {
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.8)), url(images/strybing\ plants\ -\ 03.jpg);
+}
+
+.feature3 {
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.8)), url(images/strybing\ plants\ -\ 04.jpg);
+}
